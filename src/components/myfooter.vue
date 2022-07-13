@@ -11,7 +11,7 @@
           </div>
           <div class="mb-12 w-full px-4 md:w-1/2">
             <h3 class="mb-2 text-2xl font-bold text-slate-300">Tentang Kami</h3>
-            <p class="text-slate-300 text-base">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur qui porro veritatis reprehenderit in sit provident nam quas corrupti a!</p>
+            <p class="text-slate-300 text-base">Kita adalah sebuah organisasi yang ada di SMKN4 Tasikmalaya</p>
           </div>
         </div>
         <div class="w-full border-t border-slate-700 px-4 pt-10">

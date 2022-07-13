@@ -13,7 +13,7 @@
       </div>
     </div>
     <!--jurusan start -->
-    <h1 class="font-bold text-3xl text-center text-white mb-10 mt-16 tracking-wide">Pilihan Jurusan</h1>
+    <h1 class="font-bold font-mono text-3xl text-center text-white mb-10 mt-16 tracking-wide">Pilihan Jurusan</h1>
     <section class="h-full md:flex md:justify-between gap-16 md:gap-16 mb-16">
       <div class="flip-card md:w-1/3 w-[300px] h-[450px] cursor-pointer mt-10 mx-auto">
         <div class="flip-card-inner">
@@ -23,8 +23,8 @@
           <div class="flip-card-back w-full h-full bg-green-500 text-center mb-5">
             <h1 class="text-2xl font-bold font-serif text-white text-center mt-7">Front End Developer</h1>
             <div class="container">
-              <p class="text-base font text-white text-center mt-16">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci cum dolorem, cumque rerum deleniti corporis libero non sequi ullam id, minima quas fugit vero. Consequuntur molestias animi maxime accusamus voluptate.
+              <p class="text-base font-semibold text-white text-justify mt-16">
+                Seorang Front End Developer bertanggung jawab untuk membuat desain dari sebuah website atau aplikasi.dan juga bertugas untuk menyajikan data yang telah dibuat oleh Backend.
               </p>
               <button class="py-3 px-5 bg-slate-900 text-white font-semibold rounded-full hover:bg-slate-800 mt-24">Lihat Sekarang</button>
             </div>
@@ -65,28 +65,20 @@
       </div>
     </section>
     <!-- Jurusan End -->
-    <!-- event start -->
-    <section class="bg-slate-800 pt-24 pb-24">
-      <h1 class="text-center text-white text-3xl font-mono">Activity & Event</h1>
-      <div class="flex w-full flex-wrap justify-center px-4 xl:mx-auto xl:w-10/12">
-        <div class="mb-12 p-4 md:w-1/2">
-          <div class="overflow-hidden rounded-md shadow-md">
-            <img src="@/assets/img/WhatsApp Image 2022-06-25 at 18.22.00.jpeg" alt="" width="w-full" />
-          </div>
-          <h3 class="text-md mb-3 font-semibold text-slate-900 dark:text-white">its just title</h3>
-          <p class="text-base font-medium text-slate-400">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora dignissimos voluptas optio ipsam non qui repellat excepturi earum rerum fuga velit molestiae vel, distinctio est.</p>
-        </div>
-      </div>
-    </section>
-    <!-- event end -->
+    <!-- event&showcase start -->
+    <activity />
+
+    <!-- event&showcase end -->
   </div>
 </template>
 
 <script>
 import anggota from "../components/anggota.vue";
+import activity from "../components/activity.vue";
 export default {
   components: {
     anggota,
+    activity,
   },
   data: () => ({
     images: ["https://i.ibb.co/8YfrpzY/Technology-For-A-Better-Life.png", "https://i.ibb.co/8YfrpzY/Technology-For-A-Better-Life.png", "https://i.ibb.co/BP7F86x/Desain-tanpa-judul.png"],

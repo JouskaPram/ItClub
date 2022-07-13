@@ -46,7 +46,7 @@
     </div>
     <h1 class="text-center text-3xl font-bold tracking-wide text-white mb-10 mt-5">Anggota ItClub</h1>
     <div class="w-full card-compact md:flex md:justify-between md:flex-wrap '">
-      <div class="card md:w-1/5 bg-white shadow-xl rounded-md mx-auto md:mx-5 mb-10" v-for="item in items" :key="item.id">
+      <div class="card md:w-1/5 bg-white w-[280px] shadow-xl rounded-md mx-auto md:mx-5 mb-10" v-for="item in items" :key="item.id">
         <figure class="px-10 pt-3 pb-5">
           <img :src="item.gambar" alt="Shoes" class="rounded-full" />
         </figure>
@@ -64,18 +64,20 @@
 export default {
   data() {
     return {
-      items: [],
-      url: "https://gist.githubusercontent.com/JouskaPram/49460587605b8f603fc625686f52ed8d/raw/a9ebe58af0c97f2a08e544a92bb269474f77fc57/AnggotaEskull.json",
+      items: "",
     };
   },
   mounted() {
-    this.getData();
+    this.getallproduk();
+    this.getitems();
   },
   methods: {
-    async getData() {
-      await fetch(this.url)
-        .then((res) => res.json())
-        .then((data) => (this.items = data));
+    async getallproduk() {
+      let { data, error } = await this.$supabase.from("anggota").select("id");
+    },
+    async getitems() {
+      let { data, error } = await this.$supabase.from("anggota").select("id,created_at,nama,minat,motto,gambar");
+      this.items = data;
     },
   },
 };

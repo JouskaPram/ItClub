@@ -1,8 +1,6 @@
 <template>
   <div id="app" class="bg-gray-800">
-    <navbar />
     <router-view />
-    <myfooter />
   </div>
 </template>
 

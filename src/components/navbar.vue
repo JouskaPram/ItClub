@@ -11,16 +11,16 @@
     </span>
     <ul class="md:flex md:items-center md:px-0 px-10 md:pb-0 pb-4 z-50 md:static absolute bg-gray-900 md:w-auto w-full top-14 duration-700 ease-in" :class="[open ? 'left-0' : 'left-[-100%]']">
       <li class="md:mx-4 md:my-0 my-6">
-        <router-link to="/" class="text-xl hover:text-green-500">Home</router-link>
+        <router-link to="/" tag="a" class="text-xl hover:text-green-500">Home</router-link>
       </li>
       <li class="md:mx-4 md:my-0 my-6">
-        <router-link to="/anggota" class="text-xl hover:text-green-500">Anggota</router-link>
+        <router-link to="/anggota" tag="a" class="text-xl hover:text-green-500">Anggota</router-link>
       </li>
       <li class="md:mx-4 md:my-0 my-6">
-        <router-link to="/event" class="text-xl hover:text-green-500">Event</router-link>
+        <router-link to="/activity" tag="a" class="text-xl hover:text-green-500">Activity</router-link>
       </li>
       <li class="md:mx-4 md:my-0 my-6">
-        <router-link to="/about" class="text-xl hover:text-green-500">About</router-link>
+        <router-link to="/about" tag="a" class="text-xl hover:text-green-500">About</router-link>
       </li>
 
       <router-link tag="button" to="/form-daftar" class="bg-green-400 rounded font-semibold text-white hover:bg-green-500 duration-300 py-2 px-4 md:my-0 my-6">Daftar Sekarang</router-link>
