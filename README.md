@@ -1,4 +1,4 @@
-# vueandpram
+# Project ITclub SMKN 4 Tasikmalaya
 
 ## Project setup
 ```
