@@ -88,7 +88,7 @@ export default {
       let { data, error } = await this.$supabase
         .from("event")
         .select("id,created_at,nama_event,tanggal_event,gambar")
-        .range(0, 3);
+        .range(0, 2);
       if (data) this.count = data.length;
       this.informations = data;
     },
