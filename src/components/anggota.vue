@@ -48,7 +48,7 @@
     <div class="w-full card-compact md:flex md:justify-between md:flex-wrap '">
       <div class="card md:w-1/5 bg-white w-[280px] shadow-xl rounded-md mx-auto md:mx-5 mb-10" v-for="item in items" :key="item.id">
         <figure class="px-10 pt-3 pb-5">
-          <img :src="item.gambar" alt="Shoes" class="rounded-full object-fill w-[200px] h-[200px]" />
+          <img :src="item.gambar" alt="Shoes" class="rounded-full object-fill w-full h-[200px]" />
         </figure>
         <div class="card-body items-center text-center">
           <h2 class="card-title font-semibold text-xl text-center text-slate-900">{{ item.nama }}</h2>
